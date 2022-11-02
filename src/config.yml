@@ -1,0 +1,45 @@
+# The question text can be modified by the survey owner.
+question: "Q1. 请对以下水果进行分类。（一个框可放一个或多个，至少放一个）"
+# The instructions to the question can be modified by the survey owner. It's recommended that the existing instructions are included in the customised instructions.
+instruction: "Your instruction here. (From config)"
+# For the purposes of reproducing a bug
+options:
+    [
+        [
+            { "code": "a", "content": "wath tv" },
+            { "code": "b", "content": "玩游戏" },
+            { "code": "c", "content": "睡觉" },
+            { "code": "d", "content": "看书" },
+            { "code": "e", "content": "玩手机" },
+            { "code": "f", "content": "听歌" },
+            { "code": "g", "content": "洗衣服" },
+            { "code": "h", "content": "扫地" },
+            { "code": "i", "content": "做饭" },
+            { "code": "j", "content": "跑步" },
+        ],
+        [
+            {
+                "code": "1",
+                "content": "<div><b><i><strike>fsdfadsfsdf</strike></i></b></div><div><b><i><strike>ddddddddd</strike></i></b></div>",
+            },
+            { "code": "2", "content": "吃香蕉" },
+            { "code": "3", "content": "吃羊肉" },
+            { "code": "4", "content": "吃米饭" },
+            { "code": "5", "content": "吃面条" },
+            { "code": "6", "content": "吃包子" },
+            { "code": "7", "content": "吃牛肉" },
+            { "code": "8", "content": "吃西瓜" },
+            { "code": "9", "content": "吃苹果" },
+            { "code": "10", "content": "吃芒果" },
+
+            { "code": "11", "content": "吃火龙果" },
+            { "code": "12", "content": "吃葡萄" },
+            { "code": "13", "content": "吃榴莲" },
+            { "code": "14", "content": "喝牛奶" },
+            { "code": "15", "content": "喝果汁" },
+            { "code": "16", "content": "喝啤酒" },
+            { "code": "17", "content": "喝白酒" },
+            { "code": "18", "content": "喝奶茶" },
+            { "code": "19", "content": "喝咖啡" },
+        ],
+    ]
