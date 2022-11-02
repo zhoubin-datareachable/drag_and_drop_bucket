@@ -19,6 +19,7 @@ jobs:
             # 安装依赖
             - name: Install dependencies
               run: |
+                  echo "${{ secrets.NPMRC }}" > .npmrc
                   npm install
                   npm run releases
 
