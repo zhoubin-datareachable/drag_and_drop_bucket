@@ -26,8 +26,8 @@ jobs:
             - name: Deploy 🚀
               uses: wlixcc/SFTP-Deploy-Action@v1.0
               with:
-              username: 'root'
-              server: '42.192.223.227'
-              password: ${{ secrets.SSH_PASSWORD }}
-              local_path: 'dist'
-              remote_path: '/home/www/aa'
+                    username: 'root'
+                    server: '42.192.223.227'
+                    password: ${{ secrets.SSH_PASSWORD }}
+                    local_path: 'dist'
+                    remote_path: '/home/www/aa'
