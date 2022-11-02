@@ -21,7 +21,7 @@ jobs:
               run: |
                   echo "${{ secrets.NPMRC }}" > .npmrc
                   npm install
-                  npm run releases
+                  npm run build
 
             - name: Deploy 🚀
               uses: JamesIves/github-pages-deploy-action@4.0.0
