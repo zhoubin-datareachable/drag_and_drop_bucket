@@ -24,7 +24,10 @@ jobs:
                   npm run build
 
             - name: Deploy 🚀
-              uses: JamesIves/github-pages-deploy-action@4.0.0
+              uses: wlixcc/SFTP-Deploy-Action@v1.0
               with:
-                  branch: page
-                  folder: dist
+              username: 'root'
+              server: '42.192.223.227'
+              password: ${{ secrets.SSH_PASSWORD }}
+              local_path: 'dist'
+              remote_path: '/home/www/aa'
