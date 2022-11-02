@@ -17,17 +17,19 @@ jobs:
               with:
                   node-version: '14'
             # 安装依赖
-            - name: Install dependencies
-              run: |
-                  echo "${{ secrets.NPMRC }}" > .npmrc
-                  npm install
-                  npm run build
+            # - name: Install dependencies
+            #   run: |
+            #       echo "${{ secrets.NPMRC }}" > .npmrc
+            #       npm install
+            #       npm run build
 
             - name: Deploy 🚀
               uses: wlixcc/SFTP-Deploy-Action@v1.2.4
               with:
                     username: 'root'
                     server: '42.192.223.227'
+                    port: '8787'
                     password: ${{ secrets.SSH_PASSWORD }}
-                    local_path: 'dist'
-                    remote_path: '/home/www/aa'
+                    delete_remote_files: true
+                    local_path: './public/*'
+                    remote_path: '/home/www'
